@@ -25,4 +25,4 @@ exported as a text file in the parent working directory.
 The *summary\_data* is tidy since it contains only one variable per
 column and each row represents a single observation for each combination
 of subject and activity.  
-(See the CodeBook.R for more details about the variables of this script)
+(See the CodeBook for more details about the variables of this script)
