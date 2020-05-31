@@ -1,5 +1,5 @@
-run\_analysis.R
-===============
+Codebook for run\_analysis.R
+============================
 
 File Description
 ----------------
@@ -27,7 +27,7 @@ Variables produced or used by the script
 
 -   <span style="color: blue">train\_data\_measurements,
     test\_data\_measurements</span>: variables that hold the contents of
-    the X\_Test and Y\_Test data files respectively, as a data frame.
+    the X\_Test and Y\_Test data files respectively, as a data frame.x
 
 -   <span style="color: blue;">activity\_names</span>: data frame that
     holds the activity names according to the activity ID’s in the
@@ -83,3 +83,43 @@ Data transformations applied by this script
 -   summary\_data: using *dplyr* group\_by() and summarize(), the mean
     of all columns from *unified\_data* are calculated for each activity
     and subject, saving its contents in this separated data frame.
+
+Data Dictionary for the produced dataset (summary\_data.txt)
+------------------------------------------------------------
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Data Type</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ActivityName</td>
+<td><code>Factor</code></td>
+<td>LAYING, SITTING</td>
+<td>Factor with 6 levels: “LAYING”, “SITTING”, “STANDING”, “WALKING”, “WALKING_DOWNSTAIRS”, “WALKING_UPSTAIRS”</td>
+</tr>
+<tr class="even">
+<td>SubjectId</td>
+<td><code>Integer</code></td>
+<td>1, 2, 3</td>
+<td>Integer ranging from 1 to 30</td>
+</tr>
+<tr class="odd">
+<td>From tBodyAccmeanX [column 3] to fBodyBodyGyroJerkMagstd [column 68]</td>
+<td><code>numeric</code></td>
+<td>0.289, -0.0203, -0.133</td>
+<td>These columns refer to the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ (prefix ‘t’ to denote time). The acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ). The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the ‘f’ to indicate frequency domain signals). The set of variables that were estimated from these signals are: mean(): Mean value std(): Standard deviation</td>
+</tr>
+</tbody>
+</table>
