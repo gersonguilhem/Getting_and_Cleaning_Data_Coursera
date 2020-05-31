@@ -119,7 +119,7 @@ Data Dictionary for the produced dataset (summary\_data.txt)
 <td>From tBodyAccmeanX [column 3] to fBodyBodyGyroJerkMagstd [column 68]</td>
 <td><code>numeric</code></td>
 <td>0.289, -0.0203, -0.133</td>
-<td>These columns refer to the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ (prefix ‘t’ to denote time). The acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ). The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the ‘f’ to indicate frequency domain signals). The set of variables that were estimated from these signals are: mean(): Mean value std(): Standard deviation</td>
+<td>These columns store the average of the measurements that were made for each of the activities and subjects present in the original data.</td>
 </tr>
 </tbody>
 </table>
